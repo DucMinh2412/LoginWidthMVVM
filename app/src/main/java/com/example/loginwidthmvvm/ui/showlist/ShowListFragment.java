@@ -36,6 +36,7 @@ public class ShowListFragment extends Fragment implements UserAdapter.UpdateAndD
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = FragmentShowListBinding.inflate(inflater, container, false);
+        // view Model
         viewModel = new ViewModelProvider(this, new UserViewModelFactory(requireContext())).get(UserViewModel.class);
         return binding.getRoot();
     }

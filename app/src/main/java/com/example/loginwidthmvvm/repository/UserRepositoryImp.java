@@ -3,13 +3,9 @@ package com.example.loginwidthmvvm.repository;
 import android.content.Context;
 
 import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
-
 import com.example.loginwidthmvvm.db.UserDao;
 import com.example.loginwidthmvvm.db.UserDb;
 import com.example.loginwidthmvvm.model.User;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class UserRepositoryImp implements UserRepository {

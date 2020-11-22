@@ -45,7 +45,7 @@ public class UserViewModel extends ViewModel {
         return message;
     }
 
-    public SingleLiveEvent<BaseResponse<User>> singleLiveUserResponse() {
+    public SingleLiveEvent<BaseResponse<User>> userResponse() {
         return singleLiveUserResponse;
     }
 

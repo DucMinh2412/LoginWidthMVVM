@@ -36,6 +36,7 @@ public class LoginWithMvvmFragment extends Fragment {
         // Inflate the layout for this fragment
         binding = FragmentLoginWithMvvmBinding.inflate(inflater, container, false);
         binding.setLifecycleOwner(requireActivity());
+        // view Model
         viewModel = new ViewModelProvider(this, new UserViewModelFactory(requireContext())).get(UserViewModel.class);
         binding.setUserViewModel(viewModel);
         return binding.getRoot();

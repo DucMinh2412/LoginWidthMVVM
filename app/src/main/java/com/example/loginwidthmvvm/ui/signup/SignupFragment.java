@@ -39,7 +39,7 @@ public class SignupFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         NavController navController = Navigation.findNavController(view);
         // handle change User
-        viewModel.singleLiveUserResponse().observe(getViewLifecycleOwner(), userBaseResponse -> {
+        viewModel.userResponse().observe(getViewLifecycleOwner(), userBaseResponse -> {
             User user = userBaseResponse.getData();
             if (user != null) {
                 viewModel.insert(user);

@@ -32,7 +32,6 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
 
     public interface UpdateAndDelete {
         void onUpdate(User user);
-
         void onDelete(User user);
     }
 
