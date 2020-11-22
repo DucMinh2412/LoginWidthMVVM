@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/loginWithMvvmFragment">
+
+    <fragment
+        android:id="@+id/loginWithMvvmFragment"
+        android:name="com.example.loginwidthmvvm.ui.login.LoginWithMvvmFragment"
+        android:label="fragment_login_with_mvvm"
+        tools:layout="@layout/fragment_login_with_mvvm" >
+        <action
+            android:id="@+id/action_loginWithMvvmFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginWithMvvmFragment_to_showListFragment"
+            app:destination="@id/showListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showListFragment"
+        android:name="com.example.loginwidthmvvm.ui.showlist.ShowListFragment"
+        android:label="fragment_show_list"
+        tools:layout="@layout/fragment_show_list" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.loginwidthmvvm.ui.signup.SignupFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+</navigation>

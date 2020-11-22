@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LoginWidthMVVM</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="signup_vn"><u>Đăng kí</u></string>
+    <string name="dont_have_account">Chưa có tài khoản ?</string>
+    <string name="update">Update</string>
+    <string name="error_username">Chưa nhập username</string>
+    <string name="error_password">Chưa nhập password</string>
+    <string name="error_phone">Chưa nhập phone</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="phone">Phone</string>
+    <string name="delete">Delete ?</string>
+</resources>
