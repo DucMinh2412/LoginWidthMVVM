@@ -43,7 +43,7 @@ public class ShowListFragment extends Fragment implements UserAdapter.UpdateAndD
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        SetAdapter();
+        setAdapter();
         viewModel.getAllUser().observe(getViewLifecycleOwner(), listUser -> {
             if (listUser != null) {
                 userAdapter.setData(listUser);
@@ -51,7 +51,7 @@ public class ShowListFragment extends Fragment implements UserAdapter.UpdateAndD
         });
     }
 
-    private void SetAdapter() {
+    private void setAdapter() {
         userAdapter = new UserAdapter(getContext(), this);
         binding.rclRecycleView.setAdapter(userAdapter);
     }
