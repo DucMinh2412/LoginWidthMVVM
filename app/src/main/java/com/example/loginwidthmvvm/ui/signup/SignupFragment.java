@@ -43,6 +43,9 @@ public class SignupFragment extends Fragment {
             User user = userBaseResponse.getData();
             if (user != null) {
                 viewModel.insert(user);
+                binding.edtUsername.setText("");
+                binding.edtPassword.setText("");
+                binding.edtPhone.setText("");
                 Toast.makeText(getContext(),"Signup Success !",Toast.LENGTH_SHORT).show();
                 navController.navigateUp();
             }
